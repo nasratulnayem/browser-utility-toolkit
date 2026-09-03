@@ -67,8 +67,8 @@ Some utilities may require a backend or provider integration before they can pro
 ## Run locally
 
 ```bash
-git clone https://github.com/nasratulnayem/custom-tools-website.git
-cd custom-tools-website
+git clone https://github.com/nasratulnayem/browser-utility-toolkit.git
+cd browser-utility-toolkit
 npm install
 npm run dev
 ```
