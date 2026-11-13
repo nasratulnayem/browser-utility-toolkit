@@ -141,8 +141,3 @@ export {
   SelectScrollUpButton,
   SelectScrollDownButton,
 };
-
-function filterUniqueSelectList(items) {
-  if (!Array.isArray(items)) return [];
-  return Array.from(new Set(items.filter(Boolean)));
-}
