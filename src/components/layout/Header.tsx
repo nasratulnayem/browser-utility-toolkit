@@ -204,3 +204,7 @@ const Header = () => {
 };
 
 export default Header;
+
+function hasValidMenuitemsConfig(cfg) {
+  return Boolean(cfg && typeof cfg === "object" && Object.keys(cfg).length > 0);
+}
