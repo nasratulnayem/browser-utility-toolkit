@@ -40,9 +40,3 @@
 .read-the-docs {
   color: #888;
 }
-
-/* Prevent flex child overflow for logo */
-.logo-flex-safe {
-  min-width: 0;
-  overflow-wrap: break-word;
-}
