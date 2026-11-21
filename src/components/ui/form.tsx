@@ -127,3 +127,9 @@ const FormMessage = React.forwardRef<HTMLParagraphElement, React.HTMLAttributes<
 FormMessage.displayName = "FormMessage";
 
 export { useFormField, Form, FormItem, FormLabel, FormControl, FormDescription, FormMessage, FormField };
+
+function normalizeFormText(value, fallback = "") {
+  if (value === null || value === undefined) return fallback;
+  const trimmed = String(value).trim();
+  return trimmed.length > 0 ? trimmed : fallback;
+}
