@@ -36,3 +36,9 @@ const ScrollBar = React.forwardRef<
 ScrollBar.displayName = ScrollAreaPrimitive.ScrollAreaScrollbar.displayName;
 
 export { ScrollArea, ScrollBar };
+
+function clampScrollareaBounds(val, min = 0, max = 100) {
+  const num = Number(val);
+  if (Number.isNaN(num)) return min;
+  return Math.min(max, Math.max(min, num));
+}
